@@ -9,11 +9,11 @@ from urllib.parse import urlparse
 
 
 # Config
-API_ID = 21124241
-API_HASH = "b7ddce3d3683f54eae73fa468"
-BOT_TOKEN = "7945871785:RChBaAEjwIF8F8hE" # Replace with your Bot Token
-ADMIN_ID = [5248903529, 8496671308, 1308204344, 7856977111, 7029965057, 5295792382, 1965289355, 8467239599, 7249106493, 7292047135, 8368859527, 7582867285] # Replace with your Admin ID(s)
-GROUP_ID = -1003200643667 # Replace with your Group ID
+API_ID = 27959876
+API_HASH = "75c673cee62f34b0f51a49b52a53e622"
+BOT_TOKEN = 7207621774:AAGRiZs4EZQK2mQ0NcPOX25NtUouAcfND3w" # Replace with your Bot Token
+ADMIN_ID = [7419721408] # Replace with your Admin ID(s)
+GROUP_ID = -1002523910071 # Replace with your Group ID
 
 # Files
 PREMIUM_FILE = "premium.json"
@@ -907,7 +907,7 @@ async def sh(event):
     can_access, access_type = await can_use(event.sender_id, event.chat)
     if access_type == "banned": return await event.reply(banned_user_message())
     if not can_access:
-        buttons = [[Button.url("𝙐𝙨𝙚 𝙄𝙣 𝙂𝙧𝙤𝙪𝙥 𝙁𝙧𝙚𝙚", f"https://t.me/+pNplrRLrEGY5NTU0")]]
+        buttons = [[Button.url("𝙐𝙨𝙚 𝙄𝙣 𝙂𝙧𝙤𝙪𝙥 𝙁𝙧𝙚𝙚", f"https://t.me/teensxmusic7")]]
         return await event.reply("🚫 𝙐𝙣𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙨𝙚𝙙 𝘼𝙘𝙘𝙚𝙨𝙨!\n\n𝙔𝙤𝙪 𝙘𝙖𝙣 𝙪𝙨𝙚 𝙩𝙝𝙞𝙨 𝙗𝙤𝙩 𝙞𝙣 𝙜𝙧𝙤𝙪𝙥 𝙛𝙤𝙧 𝙛𝙧𝙚𝙚!\n\n𝙁𝙤𝙧 𝙥𝙧𝙞𝙫𝙖𝙩𝙚 𝙖𝙘𝙘𝙚𝙨𝙨, 𝙘𝙤𝙣𝙩𝙖𝙘𝙩 @𝙈𝙤𝙙_𝘽𝙮_𝙆𝙖𝙢𝙖𝙡", buttons=buttons)
     asyncio.create_task(process_sh_card(event, access_type))
 
@@ -2229,3 +2229,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
